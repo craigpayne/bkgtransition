@@ -1,0 +1,118 @@
+
+
+
+[data-icon]:before {
+  font-family: "icons" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  // font-size: 30px;		
+  // font-size: rem-calc(40px);
+  // font-size: 1.5rem;
+  font-size: rem-calc(28px);
+  font-family: "icons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+// Map icon names to font unicode characters
+$icons: (    
+    home: "\6d",
+    flight: "\61",    
+    bed: "\62",
+    gift: "\63",
+    pencil: "\64",
+    telephone: "\65",
+    facebook: "\66",
+    twitter: "\67",
+    pinterest: "\68",
+    envelope: "\6a",
+    down: "\6b",
+    sale: "\6e"
+);
+
+// For adding font icons to elements using CSS pseudo-elements
+// http://jaydenseric.com/blog/fun-with-sass-and-font-icons
+@mixin icon($position: before, $icon: false, $styles: true) {
+    @if $position == both {
+        $position: 'before, &:after';
+    }
+    // Either a :before or :after pseudo-element, or both, defaulting to :before
+    &:#{$position} {
+        @if $icon {
+            // A particular icon has been specified
+            content: "#{map-get($icons, $icon)}";
+        }
+        @if $styles {
+            // Supportive icon styles required
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            font-family: "icons";
+            text-transform: none !important;
+        }
+        // Include any extra rules supplied for the pseudo-element
+        @content;
+    }
+}
+
+.icon-home:before {
+  content: "\6d";
+}
+.icon-flight:before {
+  content: "\61";
+}
+.icon-bed:before {
+  content: "\62";
+}
+.icon-gift:before {
+  content: "\63";
+}
+.icon-pencil:before {
+  content: "\64";
+}
+.icon-telephone:before {
+  content: "\65";
+}
+.icon-facebook:before {
+  content: "\66";
+}
+.icon-social-twitter:before {
+  content: "\67";
+}
+.icon-social-pinterest:before {
+  content: "\68";
+}
+.icon-social-instagram:before {
+  content: "\69";
+}
+.icon-envelope:before {
+  content: "\6a";
+}
+.icon-down-open-mini:before {
+  content: "\6b";
+}
+.icon-sale:before {
+  content: "\6e";
+}
+.icon-menu:before {
+  content: "\6c";
+}
+

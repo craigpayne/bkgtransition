@@ -1,0 +1,99 @@
+
+
+html {    
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;  
+}
+
+
+
+// Typography font family variables
+// ______________________________________________
+$font-family-text: "Montserrat-Regular";
+
+//
+// Typography variables
+// ______________________________________________
+
+// base font size
+$global-font-size : 16px;
+
+html {
+    // font-size: 1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;  
+}
+
+body {
+    background-color: white;
+    font-family: $font-family-text;
+    font-weight: 400;
+    line-height: 1.45;
+    color: #000;
+}
+
+p {
+    margin-bottom: 1.3em;
+}
+
+h1, h2, h3, h4 {
+  font-family: $font-family-text;
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: $font-size-regular;
+}
+
+h2 {
+  margin: 0;
+  font-size: $font-size-large;   
+  text-transform: uppercase;
+  font-weight: $font-weight-bold;
+}
+
+h2.heading {
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: .02em;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 16px 0;
+}
+
+h3 {
+  font-size: $font-size-large; 
+}
+
+h4 {
+  font-size: $font-size-large; 
+}
+
+small, .font_small {font-size: 0.618em;}
+
+
+a:focus,
+a:hover {
+    color: $color-red;
+}
+
+
+
+@font-face {
+  font-family: "icons";
+  src:url("../fonts/icons.eot");
+  src:url("../fonts/icons.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/icons.woff") format("woff"),
+    url("../fonts/icons.ttf") format("truetype"),
+    url("../fonts/icons.svg#icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+

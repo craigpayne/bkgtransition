@@ -1,0 +1,79 @@
+
+// ---------------------------
+// Settings
+// ---------------------------
+$button-primary-color:              $color-red;
+$button--secondary-color:           $color-dark-grey;
+
+// Button BG
+// ---------------------------
+@mixin button-bg($bg) {
+  background: $bg;
+
+  &:active {
+    background:yellow;
+  } 
+}
+
+// ---------------------------
+// Button
+// ---------------------------
+.button {
+    margin: 0;
+    line-height: normal;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border-bottom: 4px solid $color-dark-red;
+    padding: 8px 5px;
+}
+
+button {
+    margin: 0;
+    line-height: normal;
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    -o-user-select: none;
+    user-select: none;    
+    
+    span {
+        font-weight: $font-weight-bold;   
+        font-size: $font-size-small;
+        text-transform: uppercase;
+    }
+}
+
+.button--class {
+    span {
+        color: #fff;
+    }
+}
+
+.button--primary {
+    @extend .button--class;
+    background: $button-primary-color;    
+}
+
+.button--secondary {
+    @extend .button--class;
+    background: $button--secondary-color;    
+}
+
+.button--primary:not(.button--main) , .button--secondary:not(.button--main) {
+    width: 50%; 
+    float: left;
+}
+
+.button:hover, .button:focus {
+    background-color: $color-dark-red;
+    color: #fff;
+}
+
+// ---------------------------
+// Button Main
+// ---------------------------
+.button--main {
+    width: 100%;
+}
+

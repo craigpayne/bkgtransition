@@ -1,0 +1,232 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>High Fidelity</title>
+        <link rel="stylesheet" href="css/app.css">
+    </head>    
+    <body>
+        <div class="off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+                <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+                    <!-- mobile nav-->
+                    <nav>
+                        <ul class="no-bullet mobile-nav">
+                            <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Home</a></li>
+                            <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Flights</a></li>
+                            <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Hotels</a></li>
+                            <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Holidays</a></li>
+                            <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Blog</a></li>
+                            <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Faqs</a></li>
+                            <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <!-- / mobile nav -->
+                </div>
+                <div class="off-canvas-content" data-off-canvas-content>
+                    <!-- top section -->
+                    <div class="top-section show-for-medium">
+                        <!-- top section content -->
+                        <div class="top-section__content">
+
+                            <!-- top section left -->
+                            <div class="top-section__left">
+                                <ul class="top-section__list no-bullet">
+                                    <li class="top-section__item top-section__item--bordered"><a class="top-section__link" href="#">Home</a></li>
+                                    <li class="top-section__item top-section__item--bordered"><a class="top-section__link" href="#">Faqs</a></li>
+                                    <li class="top-section__item top-section__item--bordered"><a class="top-section__link" href="#">Contact</a></li>
+                                    <li class="top-section__item top-section__item--bordered">
+                                        <!-- dropdown -->
+                                        <ul class="dropdown menu" data-dropdown-menu>
+                                            <li><a href="#" class="top-section__dropdown">ZAR</a>
+                                                <ul class="menu">
+                                                    <li><a href="#">UK</a></li>
+                                                    <li><a href="#">USD</a></li>                                                      
+                                                </ul>
+                                            </li>
+                                        </ul><!-- / dropdown -->    
+                                    </li>
+                                </ul>
+                            </div> <!-- / top section left -->
+
+                            <!-- top section right -->
+                            <div class="top-section__right">
+                                <ul class="top-section__list no-bullet">
+                                    <li class="top-section__item"><a class="top-section__link top-section__icon icon-facebook icon" href="#"></a></li>
+                                    <li class="top-section__item"><a class="top-section__link top-section__icon icon-social-twitter icon" href="#"></a></li>
+                                    <li class="top-section__item"><a class="top-section__link top-section__icon icon-social-pinterest icon" href="#"></a></li>
+                                    <li class="top-section__item"><a class="top-section__link top-section__icon icon-social-instagram icon" href="#"></a></li>
+                                    <li class="top-section__item"><a class="top-section__link top-section__icon icon-telephone icon" href="#"></a></li>
+                                    <li class="top-section__item"><a class="top-section__link top-section__icon icon-envelope icon" href="#"></a></li>
+                                </ul>
+                            </div> <!-- / top section right -->
+
+                        </div> <!-- / top section content -->
+                    </div> <!-- / top section -->
+
+                    <!-- main wrapper -->
+                    <div class="wrapper">
+                            
+                            <!-- header -->
+                            <header class="header header-bar--border">
+                                <!-- mobile menu -->
+                                <div class="header__menu header-bar__item show-for-small-only">
+                                    <button class="icon icon-menu" data-toggle="offCanvas"></button>
+                                </div><!-- / mobile menu -->                  
+                                <!-- logo -->
+                                <div class="header__menu header__logo">
+                                    <h1>canvas</h1>
+                                </div><!-- / logo -->                     
+                                <div class="header__menu show-for-medium">
+                                    <!-- nav -->
+                                    <nav class="header__nav">
+                                        <a href="#" class="nav__link nav__link--home">Home</a>
+                                        <a href="#" class="nav__link nav__link--flights">Flights</a>
+                                        <a href="#" class="nav__link nav__link--hotels">Hotels</a>
+                                        <a href="#" class="nav__link nav__link--holidays">Holidays</a>
+                                        <a href="#" class="nav__link nav__link--blog">Blog</a>
+                                        <a href="#" class="nav__link nav__link--contact">1800 150 2541</a>
+                                    </nav><!-- / nav -->
+                                </div>                                
+                            </header><!-- / header -->
+
+                            <!-- content -->
+                            <div class="content">
+
+                                <!-- booking -->
+                                <div class="booking">
+
+                                    <!-- booking tabs -->
+                                    <ul class="tabs" id="booking-tabs" data-tabs>
+                                        <li class="tabs-title is-active">
+                                            <!-- flights -->
+                                            <a href="#flights" aria-selected="true" class="booking__tab booking__tab--flights">Flights</a> 
+                                        </li>
+                                        <li class="tabs-title">
+                                            <!-- hotels -->
+                                            <a href="#hotels" class="booking__tab booking__tab--hotels">Hotels</a>
+                                        </li>
+                                        <li class="tabs-title">
+                                            <!-- flights + hotels -->
+                                            <a href="#flightshotels" class="booking__tab booking__tab--flights-hotels">Flights &#43; Hotels</a> 
+                                        </li>
+                                        <li class="tabs-title">
+                                            <!-- holidays -->
+                                            <a href="#holidays" class="booking__tab booking__tab--holidays">Holidays</a>
+                                        </li>                                        
+                                    </ul> <!-- / booking tabs -->
+
+                                    <!-- booking tabs -->
+                                    <div class="tabs-content" data-tabs-content="booking-tabs">
+
+                                        <!-- flights tab -->                                    
+                                        <div class="tabs-panel is-active" id="flights">
+
+                                            <div class="row booking__page-title">
+                                                <div class="small-12 medium-7 large-7 columns">
+                                                    <!-- title -->
+                                                    <h2 class="booking__title">Book your flights</h2>
+                                                </div>
+                                                <div class="small-12 medium-5 large-5 columns">
+
+                                                    <!-- booking flight location -->
+                                                    <div class="switch large booking-flight float-right">
+                                                        <input class="switch-input" id="domestic-international" type="checkbox" name="flight-switch">
+                                                        <label class="switch-paddle booking-flight__paddle" for="domestic-international">
+                                                        <span class="switch-active booking-flight__label">Domestic</span>
+                                                        <span class="switch-inactive booking-flight__label">International</span>
+                                                      </label>
+                                                    </div><!-- / booking flight location -->
+
+                                                </div>
+                                            </div>
+
+                                            <!-- from - to -->
+                                            <div class="row">
+                                                <div class="small-12 medium-6 large-6 columns">
+                                                    <label class="booking__label" for="text-from">From</label>
+                                                    <input id="text-from" type="text" placeholder="Eg. Cape Town, South Africa" />
+                                                </div>                                                
+                                                <div class="small-12 medium-6 large-6 columns">
+                                                    <label class="booking__label" for="text-to">To</label>
+                                                    <input id="text-to" type="text" placeholder="Eg. New York, United States" />
+                                                </div>  
+                                            </div><!-- / from - to -->
+
+                                            <!-- departure / return / adults -->
+                                            <div class="row">
+                                                <div class="small-12 medium-5 large-5 columns">                                                    
+                                                    <label class="booking__label" for="text-departure">Departure</label>
+                                                    <input id="text-departure" type="text" placeholder="MM/DD/YYYY" />
+                                                </div>                                            
+                                                <div class="small-12 medium-5 large-5 columns">
+                                                    <label class="booking__label" for="text-return">Return</label>
+                                                    <input id="text-return" type="text" placeholder="MM/DD/YYYY" />
+                                                </div>
+                                                <div class="small-12 medium-2 large-2 columns">
+                                                    <label class="booking__label" for="text-adults">Adults</label>
+                                                    <input id="text-adults" type="text" placeholder="2" />
+                                                </div>
+                                            </div><!-- / departure / return / adults -->
+
+                                            <!-- actions -->
+                                            <div class="row booking__actions">
+                                                <div class="small-6 medium-4 large-4 columns">
+                                                    <button class="button button--primary button--main"><span>Search Flights</span></button>
+                                                </div>                                                
+                                                <div class="small-6 medium-4 large-4 columns">
+                                                    <a href="#" class="booking__label-advanced float-right">Advanced Search</a>
+                                                </div>
+                                            </div><!-- / actions -->                                      
+
+                                        </div> <!-- flights tab -->
+                                        
+                                        <!-- hotels -->
+                                        <div class="tabs-panel" id="hotels">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et magna rutrum, tristique lorem in, efficitur dolor. Nullam elementum, dui eget pharetra imperdiet, tellus lacus pharetra arcu, non imperdiet nibh nulla id neque. Vestibulum venenatis sodales eros, et luctus neque egestas id. Donec ligula ligula, venenatis sed ullamcorper at, imperdiet ut massa. Integer eu est nisi. Nullam ac efficitur sapien, nec ullamcorper eros. Nulla a laoreet arcu. Sed pulvinar tristique nulla, nec efficitur dolor tristique sed. Phasellus condimentum nulla ac lectus aliquet vestibulum. Mauris non orci eu leo imperdiet facilisis. Vivamus convallis pellentesque odio, vel molestie sapien iaculis ut. Pellentesque ultrices elit ac velit vulputate scelerisque. Integer fringilla lacus vel velit eleifend, at bibendum nulla facilisis. Integer augue nulla, efficitur fermentum vestibulum sed, viverra non felis.</p>                                            
+                                        </div> <!-- / hotels -->
+                                      
+                                        <!-- flights hotels -->
+                                        <div class="tabs-panel" id="flightshotels">
+                                            <p>Nullam sodales, enim vitae tincidunt mattis, dui mi vestibulum purus, sit amet rutrum neque lectus a elit. Nunc nec nibh blandit, faucibus tellus quis, sollicitudin nisl. Morbi laoreet felis at dui feugiat, sit amet rhoncus nulla blandit. Donec posuere justo non urna mattis, eget rhoncus libero imperdiet. Nam mollis odio in mollis pretium. Aenean pulvinar ex non mauris ullamcorper ornare. Vivamus sit amet risus ex.</p>
+                                        </div><!-- / flights hotels -->
+
+                                        <!-- holidays -->
+                                        <div class="tabs-panel" id="holidays">
+                                            <p>In hac habitasse platea dictumst. Curabitur condimentum sapien et ultrices hendrerit. Praesent sed malesuada ex. Praesent lacus tortor, molestie non placerat eget, luctus eget quam. Sed convallis odio in massa gravida malesuada. Aliquam vel quam sed diam vulputate faucibus laoreet vel tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse lobortis quam id lorem convallis, vel luctus nisl sodales. Proin ac ultricies nulla. Nunc a turpis id justo porttitor viverra. Curabitur ut metus ligula. Aliquam luctus eget nibh id consectetur. Duis orci sapien, blandit fermentum facilisis nec, varius ut arcu.</p>
+                                        </div><!-- / holidays -->
+
+                                    </div> <!-- / booking tabs -->
+
+                                </div> <!-- / booking -->
+
+                            </div> <!-- / content -->
+
+                    </div><!-- / main wrapper -->
+
+                    <!-- background -->
+                    <ul class="bg">
+                        <li class="bg__item"><div class="bg__img"></div></li>
+                        <li class="bg__item"><div class="bg__img"></div></li>
+                        <li class="bg__item"><div class="bg__img"></div></li>
+                        <li class="bg__item"><div class="bg__img"></div></li>
+                        <li class="bg__item"><div class="bg__img"></div></li>
+                        <li class="bg__item"><div class="bg__img"></div></li>
+                    </ul><!-- / background -->
+
+                </div><!-- / off-canvas-content -->
+
+            </div><!-- /off-canvas-wrapper-inner -->
+
+        </div> <!-- /off-canvas-wrapper -->
+
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/what-input/what-input.js"></script>
+        <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+        <script src="js/vendor/foundation-datepicker.min.js"></script>
+        <script src="js/app.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,33 @@
+$font-size-xx-small:	rem-calc(10px);
+$font-size-x-small:		rem-calc(12px);
+$font-size-small:		rem-calc(14px);
+$font-size-regular:		rem-calc(16px);
+$font-size-large:		rem-calc(20px);
+$font-size-x-large:		rem-calc(24px);
+$font-size-xx-large:	rem-calc(28px);
+$font-size-xxx-large:	rem-calc(32px);
+$font-size-xxxx-large:	rem-calc(96px);
+
+$font-size-xx-small:	10px;
+$font-size-x-small:		12px;
+$font-size-small:		14px;
+$font-size-regular:		16px;
+$font-size-large:		20px;
+$font-size-x-large:		24px;
+$font-size-xx-large:	28px;
+$font-size-xxx-large:	32px;
+
+
+
+$font-weight-light:		300;
+$font-weight-regular:	400;
+$font-weight-semi:		500;
+$font-weight-bold:		600;
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/Montserrat-Regular.woff') format('woff'), url('../fonts/Montserrat-Regular.ttf')  format('truetype'), url('../fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+

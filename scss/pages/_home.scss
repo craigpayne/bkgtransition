@@ -1,0 +1,248 @@
+/* === [ HOME ] === */
+
+$color-red: #aa4649;
+
+/* booking */
+.booking {
+
+	width: 680px;
+
+    @include breakpoint(medium only) {
+        width: 100%;
+    }
+
+    @include breakpoint(small only) {
+        width: 100%;
+    }	
+
+	&__page-title {
+		margin: 5px 0 25px 0;
+	}
+
+	/* title */
+	&__title {
+		margin: 0;
+		font-size: $font-size-x-large;   
+		text-transform: uppercase;
+		font-weight: $font-weight-semi;
+		color: #333;
+		letter-spacing: -1px;
+	}
+
+	/* tabs */
+	.tabs {
+		border: 0;
+		border-bottom: 5px solid $color-red;
+	}
+
+	.tabs-title {
+	    @include breakpoint(small only) {
+        	width: 25%;
+    	}	
+	}
+
+	&__tab {
+		background: rgba(0, 0, 0, 0.5);
+		color: #fff !important;
+		position: relative;
+		padding: 15px 30px !important;
+		margin-right: 1px;
+
+	    @include breakpoint(small only) {
+	    	padding: 16px 0 !important;
+	    	text-align: center;
+    	}	
+
+		&:hover {
+			color: #fff;
+			background: rgba(0, 0, 0, 0.8) !important;
+		}
+
+		&:active,
+		&:focus,
+		&:visted {
+			color: #fff !important;
+		}
+
+		@include breakpoint(medium only) {
+
+        }
+
+        @include breakpoint(small only) {
+        	font-size: 0 !important;
+        }
+
+	}
+
+	&__tab:focus, &__tab[aria-selected='true'] {
+    	background: $color-red !important;    
+	}
+
+	/* modifiers */
+	&__tab--flights {
+	    @include icon(before, flight){                 	        
+            font-size: 17px;
+    		padding-right: 5px;
+    		position: relative;
+    		top: 3px;
+    	};
+	}
+
+	&__tab--hotels {
+	    @include icon(before, home){                 	        
+            font-size: 17px;
+    		padding-right: 5px;
+    		position: relative;
+    		top: 3px;
+    	};
+	}	
+
+	
+	&__tab--flights-hotels {
+		padding: 18px 30px 12px 30px !important;
+
+		&:after {		
+		    content: "Save";
+		    background: #bb4947;
+		    padding: 1px 5px;
+		    font-size: 10px;
+		    margin: 3px 0 3px 5px;
+		    display: inline-block;
+		}		
+
+	}
+
+	&__tab--holidays {
+	    @include icon(before, gift){                 	        
+            font-size: 17px;
+    		padding-right: 5px;
+    		position: relative;
+    		top: 3px;
+    	};
+	}			
+
+	/* tabs content */
+	.tabs-content {
+	    background: rgba(255, 255, 255, 0.9);
+	    transition: none;
+	    border: 0;
+	    padding: 20px;
+
+	    @include breakpoint(small only) {
+	    	padding: 0;
+    	}	
+	
+	}
+
+	/* booking flight */
+	.booking-flight {
+
+	    margin: 0;
+	    padding: 0;
+		color: #000;
+
+	    @include breakpoint(small only) {
+        	float: left !important;
+    	    margin: 20px 0 0 0;
+    	}	
+
+		&__label {
+			font-size: $font-size-xx-small;
+			letter-spacing: 0;
+			font-family: arial;
+		}
+
+		&__paddle,
+		input:checked ~ .switch-paddle {
+			background: #fff;
+			border: 1px solid $color-light-grey;
+		}
+		
+		input:checked+label > span:nth-child(1) {
+    		color: #000;
+		}
+
+		input:checked+label > span:last-child {
+    		color: #fff;
+		}
+
+		input:not(:checked) + label > span:nth-child(1) {
+		    color: #fff;
+		    left: 17px;
+		}		
+
+	}
+
+	&__label {
+		text-transform: uppercase;
+    	font-size: 12px;
+    	margin-bottom: 10px;
+    	font-weight: 500;
+	}
+
+	&__actions {
+		margin-top: 15px;
+	}
+
+	&__label-advanced {
+		font-style: italic;
+		font-family: georgia;
+		border-bottom: 1px solid $color-red;
+		color: $color-red;
+		font-size: $font-size-small;
+		margin: 10px 0;
+	}
+
+
+	.switch-active {
+		display: block !important;
+		z-index: 2;
+	}
+
+
+	.switch-inactive {
+		z-index: 2;
+		right: 8px;
+		// right: 0;
+	}
+
+
+	
+
+	input:checked+label>.switch-inactive {
+    	display: block !important;
+	}
+
+	.switch.large .switch-paddle {
+	    width: 160px;
+        height: 27px;
+	}
+
+
+	.switch.large .switch-paddle::after {
+    	width: 80px;
+    	height: 25px;
+	}
+
+	.switch-paddle::after {
+	    background: $color-red;
+	    content: '';
+	    display: block;
+	    position: absolute;
+	    height: 1.5rem;
+	    left: 0;
+	    top: 0;
+	    width: 1.5rem;
+	    transition: all 0.25s ease-out;
+	    transform: translate3d(0, 0, 0);
+	    border-radius: 0;
+	    z-index: 1;
+	}
+
+	.switch.large input:checked ~ .switch-paddle::after {
+	        left: 80px;	
+	}
+
+
+}
+
